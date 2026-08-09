@@ -124,6 +124,7 @@ def attempts():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
 @app.route("/demo-detect", methods=["POST"])
 def demo_detect():
     data = request.get_json()
